@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi barra</title>
+    <style>
+       .navbar {
+            background-color: #0a3541;     /* Azul petróleo */
+            border-bottom: 4px solid #9d580d; /* Línea inferior en contraste */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10%; /* Menos espacio lateral */
+            
+        }
+
+        .navbar img {
+            width: 70px;   /* Logo más grande */
+            height: auto;
+        }
+
+        .navbar .links {
+            display: flex;
+            gap: 5px; /* Menos separación entre botones */
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px 14px; /* Botones más compactos */
+            border-radius: 6px;
+            
+        }
+
+        .navbar a:hover {
+            background-color: #efb980;
+            color: #0a3541;
+        }
+
+        body {
+           
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #094f6194;
+            margin: 0;
+        }
+        /*.navbar{
+            background-color: #efb980;
+            overflow: hidden;
+            border-style: solid;
+            border-color: #0a3541;
+            padding-left: 10%;
+        }
+        .navbar a{
+            float: left;
+            display: block;
+            color: rgb(0, 0, 0);
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: larger;
+            font-family: 'Times';
+        }
+        img {
+            padding-right: 200%;
+        }
+        .navbar a:hover{
+            background-color: #c3b79c;
+            border-style: inset;
+            border-color: #0a3541;
+            
+        }
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }*/
+    </style>
+</head>
+<body>
+    {% load static %}
+
+   <div class="navbar">
+        <img src="{% static 'img/icono2.png' %}" alt="sasas">
+        <br>
+        <br>
+        <a href="/inicio/">Inicio</a>
+        <a href="/toyota/">Toyota</a>
+        <a href="/ford/">Ford</a>
+        <a href="/chevrolet/">Chevrolet</a>
+        <a href="/contacto/">Contacto</a>
+   </div>
+
+</body>
+</html>

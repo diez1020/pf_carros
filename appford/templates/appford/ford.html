@@ -1,0 +1,14 @@
+{% extends "apphome/base.html" %}
+{% load static %}
+    {% block content %}
+        
+    {% for i in ford %}
+    <div class="org">
+    <img class="img" src="{{i.imagen.url}}" alt="asasas" width="450">
+    <Div class="contenedor">
+        <h2>{{i.titulo}}</h2>
+        <p>{{i.contenido}}</p>
+    </Div>
+    </div>
+    {% endfor %}
+    {% endblock %}

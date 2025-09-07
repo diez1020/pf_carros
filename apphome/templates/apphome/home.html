@@ -1,0 +1,49 @@
+{% extends "apphome/base.html" %}
+{% load static %}
+    {% block content %}
+        <br>
+        <div class="org">
+        <img class="img" src="{% static 'img/4x4.jpg' %}" alt="4x4" width="450">
+        <Div class="contenedor">
+            <h2>¿Que es esto?</h2>
+            <p>En esta pagina podras ver todo tipo de informacion <br>
+                acerca de las mejores camionetas del mercado, <br>
+                para que asi puedas elegir bien cual comprar <br>
+                y disfrutar de este gran mundo.</p>
+        </Div>
+        </div>
+        <h1 style="color: #ffffff; margin-left: 40%; background-color: #182145; display: inline; border: solid #9d580d; padding: 5px;">Nuestras marcas</h1>
+        <div class="org">
+            <div class="contenedor">
+                <h2>Toyota</h2>
+                <p>Esta marca ha sido por decadas la favorita de miles de personas, <br>
+                su calidad japonesa habla por si sola, esta marca es perfecta para aquellos <br>
+                que les gusta poner al limite sus vehiculos, toyota supera el terreno y obstaculo <br>
+                que se atraviese sin ninguna dificultad.</p>
+            </div>
+            <img class="img" src="{% static 'img/toyota.png' %}" alt="toyota" width="200">
+        </div>
+        <div class="org">
+            <div class="contenedor">
+                <h2>Ford</h2>
+                <p>Las camionetas Ford son reconocidas en todo el mundo por su fuerza, <br>
+                durabilidad y versatilidad. Diseñadas para adaptarse tanto al trabajo <br> 
+                pesado como a la aventura, ofrecen motores potentes, gran capacidad de carga 
+                <br> y tecnología de última generación.</p>
+            </div>
+            <img class="img" src="{% static 'img/ford.png' %}" alt="toyota" width="200">
+        </div>
+        <div class="org">
+            <div class="contenedor">
+                <h2>Chevrolet</h2>
+                <p>Las camionetas Chevrolet destacan por su potencia, diseño moderno <br>
+                y comodidad, ofreciendo un equilibrio perfecto entre desempeño y estilo. <br> 
+                Con tecnología avanzada y motores eficientes, están pensadas tanto para <br>
+                quienes necesitan resistencia en el trabajo como para quienes disfrutan <br> 
+                de la aventura en carretera y fuera de ella.</p>
+            </div>
+            <img class="img" src="{% static 'img/chevrolet.png' %}" alt="toyota" width="200" style="padding: 4px;">
+        </div>
+
+
+    {% endblock %}
