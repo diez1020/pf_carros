@@ -1,5 +1,5 @@
 from django.urls import path
-from appchevrolet.views import chevrolet
+from appchevrolet.views import carros
 urlpatterns = [
-    path('chevrolet/', chevrolet),
+    path('carros/', carros)
 ]

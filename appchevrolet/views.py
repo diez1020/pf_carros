@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from appchevrolet.models import chevys
+from appchevrolet.models import vehiculos
 # Create your views here.
-def chevrolet(request):
-    chev = chevys.objects.all()
-    return render(request, 'appchevrolet/chevrolet.html', {'chevy':chev})
+
+def carros(request):
+    vehi = vehiculos.objects.all()
+    return render(request, 'appchevrolet/carros.html', {'carros': vehi})

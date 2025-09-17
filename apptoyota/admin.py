@@ -1,8 +1,9 @@
 from django.contrib import admin
-from apptoyota.models import toyotas
+from apptoyota.models import hoteles
 # Register your models here.
-class toyotasAdmin(admin.ModelAdmin):
+class hotelesAdmin(admin.ModelAdmin):
     readonly_fields = ('creado', 'actualizado')
-    list_display = ('titulo','contenido','imagen','creado', 'actualizado')
+    list_display = ('nombre','distancia','imagen','precio','creado', 'actualizado')
 
-admin.site.register(toyotas, toyotasAdmin)
+admin.site.register(hoteles, hotelesAdmin)
+

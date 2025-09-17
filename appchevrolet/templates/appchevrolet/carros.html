@@ -1,0 +1,69 @@
+{% extends 'apphome/base.html' %} 
+
+{% block title %}
+Vehiculos
+{% endblock %}
+{% block menu3 %}
+  class="active"
+{% endblock %}
+
+{% block content %}
+<main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url(https://img1.wsimg.com/isteam/ip/9ad94f80-9463-44df-b3b3-325957d63d7b/20230415_114922.jpg);">
+      <div class="container position-relative">
+        <h1>Vehiculos participantes</h1>
+        <p>Algunos de los vehiculos que estaran mostrando su imponencia y tecnologia a todos los visitantes.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="/inicio/">Home</a></li>
+            <li class="current">Vehiculos</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="speakers section">
+
+      <div class="container">
+
+        <div class="speakers-list">
+
+          <div class="row">
+          {% for i in carros %}
+            <div class="col-lg-6 speaker-entry">
+              <div class="speaker-profile">
+                <div class="speaker-meta">
+                  <div class="speaker-photo">
+                    <img src="{{i.imagen.url}}" alt="{{i.modelo}}" class="img-fluid">
+                  </div>
+                  <div class="speaker-info">
+                    <h4>{{i.modelo}}</h4>
+                    <span class="speaker-position">{{i.marca}}</span>
+                    <div class="speaker-track">{{i.categoria}}</div>
+                  </div>
+                </div>
+                <div class="speaker-details">
+                  <div class="speaker-topic">
+                    <i class="bi bi-wrench"></i>
+                    <span>{{i.motor}}</span>
+                  </div>
+                  <p class="speaker-summary">{{i.contenido}}</p>
+                </div>
+              </div>
+            </div><!-- End Speaker Entry -->
+            {% endfor %}
+            
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Speakers Section -->
+
+  </main>
+{% endblock %}

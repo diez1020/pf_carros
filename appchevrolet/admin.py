@@ -1,8 +1,8 @@
 from django.contrib import admin
-from appchevrolet.models import chevys
+from appchevrolet.models import vehiculos
 # Register your models here.
-class chevysAdmin(admin.ModelAdmin):
+class vehiculosAdmin(admin.ModelAdmin):
     readonly_fields = ('creado', 'actualizado')
-    list_display = ('titulo','contenido','imagen','creado', 'actualizado')
+    list_display = ('modelo','marca','categoria','motor','contenido','imagen','creado', 'actualizado')
 
-admin.site.register(chevys, chevysAdmin)
+admin.site.register(vehiculos, vehiculosAdmin)

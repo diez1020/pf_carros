@@ -1,5 +1,5 @@
 from django.urls import path
-from apptoyota.views import toyota
+from apptoyota.views import ubicacion
 urlpatterns = [
-    path('toyota/', toyota),
+    path('ubicacion/', ubicacion),
 ]

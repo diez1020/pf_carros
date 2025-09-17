@@ -1,0 +1,161 @@
+{% extends 'apphome/base.html' %} 
+
+{% block title %} 
+Ubicacion
+{% endblock %} 
+
+{% block menu4 %}
+class="active"
+{% endblock %} 
+{% load static %}
+{% block content %}
+<main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url(https://plazamayor.com.co/wp-content/uploads/Novedad-Grandes-Cambios.jpg);">
+      <div class="container position-relative">
+        <h1>Ubicacion</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="/inicio/">Home</a></li>
+            <li class="current">Ubicacion</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Venue 2 Section -->
+    <section id="venue-2" class="venue-2 section">
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-6">
+            <div class="venue-image">
+              <img src="{% static 'assets/img/aerea.png' %}" alt="Event Venue" class="img-fluid rounded">
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="venue-content">
+              <h3>Centro de eventos Plaza mayor, Medellin</h3>
+              <div class="venue-address">
+                <i class="bi bi-geo-alt"></i>
+                <span>Cl. 41 #N° 55-80, La Candelaria, Medellín, La Candelaria, Medellín, Antioquia</span>
+              </div>
+
+              <p>Plaza Mayor Medellín es el principal recinto ferial y de convenciones de la ciudad, ubicado estratégicamente en el sector de La Alpujarra. Es un espacio icónico que impulsa el desarrollo económico, empresarial y cultural de Medellín y Antioquia.</p>
+
+              <div class="venue-features">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="feature-item">
+                        <i class="bi bi-buildings"></i>
+                      <span>50,000 m²</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item">
+                      <i class="bi bi-wifi"></i>
+                      <span>Internet de alta calidad</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item">
+                      <i class="bi bi-p-square-fill"></i>
+                      <span>Parqueadero en los alrededores</span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item">
+                        <i class="bi bi-bus-front-fill"></i>
+                      <span>conexion con metro-plus y transporte publico</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="venue-actions">
+                <a href="https://www.google.com/maps/place/Centro+de+Convenciones+Plaza+Mayor/@6.240855,-75.5796663,16z/data=!4m6!3m5!1s0x8e4429ab627545c1:0x23674fd4c47ec19c!8m2!3d6.2408557!4d-75.5759073!16s%2Fm%2F0wxv81n?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-primary">
+                  <i class="bi bi-map"></i>
+                  Google maps
+                </a>
+                <a href="https://plazamayor.com.co/" target="_blank" class="btn btn-outline-primary">
+                  <i class="bi bi-building"></i>
+                  Mas informacion
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="venue-map">
+              <h4>Lugar del evento</h4>
+              <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.346934082906!2d-75.57966627736803!3d6.240855044435341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429ab627545c1%3A0x23674fd4c47ec19c!2sCentro%20de%20Convenciones%20Plaza%20Mayor!5e0!3m2!1ses-419!2sco!4v1757986183250!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="travel-info">
+              <div class="travel-icon">
+                <i class="bi bi-airplane-fill"></i>
+              </div>
+              <h5>Por Aire</h5>
+              <p>El aeropuerto enrique olaya (EOH) para vuelos regionales y El jose maria cordova (MDE) para vuelos internacionales.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="travel-info">
+              <div class="travel-icon">
+                <i class="bi bi-train-front-fill"></i>
+              </div>
+              <h5>Por Tren</h5>
+              <p>Tanto la estación Alpujarra como Exposiciones se encuentran cerca de Plaza Mayor y cuentan con señalización para facilitar la llegada de los visitantes hasta el recinto.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="travel-info">
+              <div class="travel-icon">
+                <i class="bi bi-car-front-fill"></i>
+              </div>
+              <h5>Por Carro</h5>
+              <p>Plaza Mayor cuenta con celdas de parqueaderos distribuidas en zonas de acuerdo a cada recinto. Estos parqueaderos están a plena disposición de cada uno de los asistentes.</p>
+          </div>
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="accommodation-section">
+              <h4>Hoteles recomendados</h4>
+              <div class="row">
+                {% for i in hotel %}
+                <div class="col-lg-4">
+                  <div class="hotel-card">
+                    <img src="{{i.imagen.url}}" alt="{{i.nombre}}" class="img-fluid">
+                    <div class="hotel-info">
+                      <h6>{{i.nombre}}</h6>
+                      <div class="hotel-distance">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>{{i.distancia}}</span>
+                      </div>
+                      <div class="hotel-price">
+                        <span>{{i.precio}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+</main>
+{% endblock %}

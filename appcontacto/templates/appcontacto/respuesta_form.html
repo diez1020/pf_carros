@@ -1,9 +1,42 @@
 {% extends 'apphome/base.html' %}
-
+{% load static %}
 {% block content %} 
+   <!-- Page Title -->
+   <div class="page-title dark-background" style="background-image: url(assets/img/events/showcase-9.webp);">
+    <div class="container position-relative">
+      <h1>Contacto</h1>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="/inicio/">Home</a></li>
+          <li class="current">Contacto</li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
+  <section id="intro" class="intro section">
 
-    <Div class="contenedor" style="margin: 15%;">
-        <H2>Informacion enviada con exito</H2>
-        <h3 style="color: aliceblue;">Ya puedes regresar...</h3>
-    </Div>
+    <div class="container" style="padding-left: 30%;">
+
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="visual-section">
+                    <div class="highlight-cards">
+                        <div class="highlight-card">
+                        <i class="bi bi-envelope"></i>
+                        <h4>Informacion Enviada correctamente</h4>
+                        <p>Pronto recibiras respuesta de tu solicitud</p>
+                        <div class="cta-section" style="padding-left: 15%;">
+                        <a href="/contacto/" class="btn btn-primary">Volver a contacto</a>
+                        </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
 {% endblock %}

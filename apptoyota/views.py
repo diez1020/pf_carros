@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from apptoyota.models import toyotas
+from apptoyota.models import hoteles
 # Create your views here.
-def toyota (request):
-    toyo = toyotas.objects.all()
-    return render(request, 'apptoyota/toyota.html', {'toyota':toyo})
+def ubicacion (request):
+    ht = hoteles.objects.all()
+    return render(request, 'apptoyota/ubicacion.html', {'hotel': ht})
+
